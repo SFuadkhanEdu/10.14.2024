@@ -1,0 +1,293 @@
+.container{
+    padding: 80px 48px;
+}
+
+.flex{
+    display: flex;
+}
+main{
+    padding-left: 18%;
+    height: 150vh;
+}
+
+/* LEFT NAV START */
+.left_nav{
+    position: fixed;
+    height: 100vh;
+    width: 18%;
+    background-color: rgba(189, 93, 56, 1) !important
+}
+.nav__left_content{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+.nav__avatar{
+    /* width: 144px;
+    height: 144px; */
+     border-radius: 50%;
+    overflow: hidden;
+     border: 10px solid orange;
+}
+.nav__avatar img{
+    width: 144px;
+    height: 144px;
+}
+
+.left_nav_ul{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.left_nav_ul li a{
+    color: white;
+    font-size: 30px;
+}
+/* LEFT NAV END */
+
+/* TOP NAV START */
+.top_nav{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(189, 93, 56, 1) !important    
+}
+.nav_top_content{
+    width: 100%;
+    justify-content: space-between;
+}
+.top_nav_ul{
+    display: none;
+    justify-content: space-between;
+}
+.top_nav_ul_div ul{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+.initials{
+    font-size: 20px;
+    color: white;
+}
+.menu_button{
+    font-size: 20px;
+    color: white;
+}
+/* TOP NAV END */
+
+/* MAIN START */
+/* credentials section */
+main section{
+    height: 100vh;
+    border-bottom: 1px solid black;
+}
+.credentials_section{
+    
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.credentials_section .header{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.credentials_section .header span{
+    color: orange;
+}
+.credentials_section .address{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.address a{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.credentials_section .paragraph{
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.credentials_section .socials{
+    margin-top: 40px;
+    gap: 25px;
+}
+.socials button{
+    padding: 20px;
+    background-color: rgba(37, 37, 37, 0.774);
+    border-radius: 50%;
+}
+.socials button:last-child {
+    padding: 20px 24px;
+}
+.socials button i{
+    color: white;
+    font-size: 24px;
+}
+/* credentials section */
+/* experience section */
+.experience_section{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.experience_section .header{
+    font-size: 1.5rem;
+}
+.experience_item{
+    position: relative;
+}
+.experience_text{
+    width: 80%;
+}
+.experience_text h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.experience_text div{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.experience_item .experience_date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: orange;
+}
+/* experience section */
+/* education section */
+
+.education_section{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.education_item{
+    position: relative;
+}
+.education_item_text{
+    width: 80%;
+}
+.education_item_text h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.education_item_text div{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.education_date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: orange;
+}
+/* education section */
+/* interests section */
+
+.interests_section{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.interests_section h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+/* interests section */
+/* awards section */
+
+.awards_section{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.awards_section h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+/* awards section */
+
+/* MAIN END */
+@media screen and (max-width:994px) {
+    .container{
+        padding: 20px;
+    }
+    .left_nav{
+        display: none;
+    }
+    .top_nav{
+        display: block;
+    }
+    .top_nav_ul{
+        display: none;
+        justify-content: space-between;
+    }
+    main{
+        padding-left: 0;
+        height: auto;
+    }
+    body{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:764px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1rem !important;
+    }
+    p{
+        font-size: 0.8rem !important;
+    }
+    .experience_date{
+        position: static !important;
+    }
+    .experience_text{
+        margin: 0 auto;
+    }
+    .experience_text div{
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    .container{
+        padding: 20px;
+    }
+    .credentials_section .socials{
+        gap: 5px;
+    }
+    .credentials_section .socials button{
+        padding: 5px;
+    }
+    i{
+        font-size: 16px !important;
+    }
+    main section{
+        min-height: 30vh;
+        gap: 20px;
+        font-size: 0.75rem;
+    }
+    .experience_section{
+        gap: 10px;
+        /* height: 45vh; */
+    }
+    .education_item_text {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .education_date{
+        position: static !important;
+    }
+}
